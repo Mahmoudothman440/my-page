@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #4759fa;
+  --main-color-hover: #9e70c4;
+  --main-transition: 0.7s ease;
+  --main-transform: scale(1.1);
+}
+
+header {
+  width: 100%;
+  background-color: #f0f0f0;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+header .nav-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 10px;
+  top: 200px;
+  background-color: rgb(185, 181, 187);
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  
+} 
+
+
+header .nav-bar .nav-a {
+  color: rgb(23 0 151);
+  font-size: 2.6em;
+}
+
+
+.logo {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: var(--main-color-hover);
+}
+
+.navigation a {
+  padding-left: 30px;
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.navigation a:hover {
+  color: var(--main-color-hover);
+}
+
+                        /* start section one  main */
+
+section {
+  padding: 100px ;
+}
+
+.main {
+  /* بتستخدم عندما نريد عمل الشيكشن بارتفاع الصفحة الى قدامك فبتعمل القيمة 100 */
+  min-height: 100vh; /*=568px */
+  background-image: url(../image/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  margin-top: 100px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6em;
+  
+}
+
+.main h2 span {
+  font-size: 2.5em;
+  color: #3a6cf4;
+  font-weight: 800;
+}
+
+.main h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.9em;
+  margin-bottom: 25px;
+}
+
+.main-btn {
+  background-color: #3a6cf4;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-icos a {
+  padding-right: 22px;
+  color: #fff;
+  font-size: 20px;
+}
+                     /* end section one  main */
+
+                    /* start section two  services */
+.title {
+  color: #3a6cf4;
+  font-size: 2.8em;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 40px rgba(1 1 1 / 20%);
+  text-align: center;
+  padding: 10px;
+  transition: 0.7s ease;
+  font-size: 1.0em;
+  font-weight: 500;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card h4 {
+  color: #3a6cf4;
+  font-size: 1.4em;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-icon {
+  color: #3a6cf4;
+  font-size: 8em;
+}
+
+.category {
+  font-size: 0.8em;
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 6em;
+
+}
+
+.projects {
+  background-color: rgb(49, 62, 77);
+}
+
+.projects-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 50px 100px; */
+}
+
+.pro-card {
+  width: 300px;
+  height: 350px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 10px;
+  overflow: hidden; 
+  padding-bottom: 10px; 
+  transition: 0.7s ease;/* بنعمل اوفر فلو عشان حواف الصورة بتظهر لما بعمل بوردر ريديوس  */
+}
+
+.pro-card:hover {
+  transform: scale(1.1);
+}
+   /*ممكن اعمل بادينج ومعملش اوفر فلو بس دة هيبقى شكل مختلف */
+
+.pro-card img {
+  width: 100%;
+  height: 70%;
+  /* position: sticky; */
+
+}
+
+.pro-card  h3 {
+  text-align: center;
+  font-size: 180%;
+  color: #f2f3f7;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+strong {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+strong a {
+  text-decoration: none;
+  color: rgb(162, 192, 52);
+}
+
+footer {
+  background-color: #190b24;
+  font-size: 1.3em;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+}
+
+footer p {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 400;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/ */
+
+
+header nav ul {
+  list-style: none;
+
+}
+
+header nav ul li {
+  float: left;
+  display: none;
+}
+
+header nav ul li a{
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  display: block;
+}
+
+
+
+
